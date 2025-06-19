@@ -15,11 +15,20 @@
     <title>WIKI OS</title>
   </head>
   <body style="background-color:#0d3a74;">
-    <script>var x = document.getElementById("myAudio").autoplay;</script>
-      <audio id="myAudio" autoplay>
-  <source src="./Epic Spectrum - Fallen (freetouse.com).mp3" type="audio/ogg">
-  <source src="./Epic Spectrum - Fallen (freetouse.com).mp3" type="audio/mpeg">
-  </audio>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script>function PlayMusic() {
+
+  var play=document.getElementById("music");
+  play.play();
+}
+
+$(document).ready(function(){
+  setTimeout(PlayMusic,3000);
+})</script>
+      <audio controls id="music" >
+
+  <source src="Epic Spectrum - Fallen (freetouse.com).mp3" type="audio/mpeg">
+</audio>
     <h1 class="blink">The WIKI has been reached</h1>
   </body>
 </html>
