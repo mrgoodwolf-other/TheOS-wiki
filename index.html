@@ -7,10 +7,14 @@
 10px}
       h1,h2,h3{line-height:1.2; color: white;}
       p {color: white;}
+      .blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
     </style>
     <title>WIKI OS</title>
   </head>
   <body style="background-color:#0d3a74;">
-    <h1><blink>The WIKI has been reached</blink></h1>
+    <h1 class="blink>The WIKI has been reached</h1>
   </body>
 </html>
